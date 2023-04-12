@@ -1,0 +1,12 @@
+server:
+  port: 8085
+
+spring:
+  application:
+    name: stock-service
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 10.3.183.5:8851 #服务注册中心地址
+        namespace: 23b0ae43-12b4-47c1-a3a3-3a83d7edd6ae
+        group: DEMO_GROUP

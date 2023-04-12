@@ -1,0 +1,26 @@
+server:
+  port: 8083
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: order-service
+  cloud:
+    nacos:
+      config:
+        server-addr: 10.3.183.5:8848
+        file-extension: yaml
+        namespace: 23b0ae43-12b4-47c1-a3a3-3a83d7edd6ae
+        group: DEMO_GROUP
+        username: test
+        password: hlw@123456
+      discovery:
+        server-addr: 10.3.183.5:8848 #服务注册中心地址
+        namespace: 23b0ae43-12b4-47c1-a3a3-3a83d7edd6ae
+        group: DEMO_GROUP
+        username: test
+        password: hlw@123456
+        ephemeral: false
+        metadata:
+          version: 0.0.1
